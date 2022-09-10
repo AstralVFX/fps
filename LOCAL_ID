@@ -1,0 +1,8 @@
+(function() {
+  var a = function(a) {
+    for (var b = "", c = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", d = c.length, e = 0; e < a; e++) b += c.charAt(Math.floor(Math.random() * d));
+    return b
+  }(1e3);
+  localStorage.userid = a;
+  localStorage.userid
+})
